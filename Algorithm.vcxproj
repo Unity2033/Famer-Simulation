@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2022.6.10.h" />
+    <ClInclude Include="2022.6.13.h" />
     <ClInclude Include="2022.6.9.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

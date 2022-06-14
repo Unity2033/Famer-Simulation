@@ -2,84 +2,84 @@
 
 using namespace std;
 
-void Insert(int array[], int n)
+int array[] = { 54,3,66,20,91,17,82,49 };
+int sorted[8];
+
+void Merge(int left, int right)
 {
-	int temp, j;
+	int middle = (left + right) / 2;
+	int i = left; // 0
+	int j = middle + 1;
+	int k = left; // 0
 
-	for (int i = 1; i < n; i++)
+	while (i <= middle && j <= right)
 	{
-        // 45 <----- 45
-		temp = array[i];
-
-		//   j = 3    조건 (3 > 0 && 99 > 45) 
-		for (j = i; i > 0 && array[j - 1] > temp; j--) // j를 --하므로 j는 0번째 인덱스를 가집니다.
+		// 양쪽 배열에서 최소값을 비교했을 때 오른쪽 배열이 더 큰 경우
+		// 그대로 왼쪽 배열의 최소값이 결과 배열에게 저장되도록 설정하면 됩니다.
+		if (::array[i] > ::array[j])
 		{
-			// 성립이 되었을 때
-			// [3]99 <---- [2] 99
-			array[j] = array[j - 1];
+			sorted[k++] = ::array[j++];
 		}
+		else
+		{
+			sorted[k++] = ::array[i++];
+		}
+	}
 
-		// 1번째 인덱스에 처음에 94을 저장한 값을 넣어줍니다.
-		array[j] = temp;
+	// 오른쪽 배열에 아직 결과 배열에 들어가지 못한 값이 있다면 그대로 넣어줍니다.
+	if (i > middle)
+	{
+		while (j <= right)
+		{
+			sorted[k++] = ::array[j++];
+		}
+	}
+	else
+	{
+		while (i <= middle)
+		{
+			sorted[k++] = ::array[i++];
+		}
+	}
+
+	for (int v = left; v <= right; v++)
+	{
+		// [ 54,3,66,20,91,17,82,49 ] <- [ 3,17,20,49,54,66,82,91 ] 
+		::array[v] = sorted[v];
+	}
+}
+
+
+// 배열에 저장되어 있는 원소의 수를 2개로 분할하고 병합하는 함수
+void MergeSort(int left, int right)
+{
+	int middle;
+
+	if (left < right)
+	{
+		// [] [] [] [] | [] [] [] []
+		// (left <= middle) 왼쪽 부분 정렬
+		// (middle+1 <= right) 오른쪽 부분정렬
+
+		middle = (left + right) / 2;
+		// <- MergeSort를 재귀
+		MergeSort(left, middle);      // 0, 3
+		MergeSort(middle + 1, right); // 4, 7
+
+		Merge(left, right); // 병합하는 과정 함수 호출
 	}
 }
 
 int main()
 {
-	// O(n^2) -> 거품 정렬 < 선택 정렬 < 삽입 정렬
-	// 시간 복잡도 순서와 효율성
-	
-	// 삽입 정렬
-	/*
-	             // 23 99 94 45 38
-	int array[] = { 99,23,94,45,38 };
-	int size = sizeof(array) / sizeof(array[0]);
+	int size = sizeof(::array) / sizeof(int);
 
-	Insert(array, size);
+	MergeSort(0, size-1);
 
 	for (int i = 0; i < size; i++)
 	{
-		std::cout << array[i] << " ";
-	}
-	*/
-
-	// 거꾸로 읽는 문자열을 비교해주세요.
-	// 입력 A와 입력 B를 설정합니다.
-	
-    // A에게 <- 3개의 숫자만 입력해주세요.
-	// B에게 <- 3개의 숫자만 입력해주세요.
-
-	// 입력한 숫자를 거꾸로 저장해서 비교해야 합니다.
-	// A가 159 <- 951 
-	// B가 734 <- 437 
-
-	// A와 B의 값을 비교합니다.
-	// A가 크면 A가 입력한 숫자의 반대로된 숫자를 출력해야합니다.
-	// 만약에 B가 크면 B가 입력한 숫자의 반대로된 숫자를 출력해야합니다.
-
-	string value_1;
-	string value_2;
-
-	cin >> value_1 >> value_2;
-
-	string temp;
-
-	for (int i = value_1.length() - 1; i >= 0; i--)
-	{
-		if (value_1[i] > value_2[i])
-		{
-			temp = value_1;
-			break;
-		}
-		else if (value_1[i] < value_2[i])
-		{
-			temp = value_2;
-			break;
-		}
+		cout << ::array[i] << " ";
 	}
 
-	for (int i = value_1.length() - 1; i >= 0; i--)
-	{
-		cout << temp[i];
-	}
+	return 0;
 }

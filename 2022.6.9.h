@@ -11,6 +11,7 @@ void Function(int array[], int n)
 }
 */
 
+// 거품 정렬
 /*
 void Bubble(int array[], int n)
 {
