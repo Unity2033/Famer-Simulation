@@ -32,5 +32,8 @@
     <ClInclude Include="2022.6.14.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="2022.6.15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
