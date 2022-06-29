@@ -44,5 +44,25 @@
     <ClInclude Include="2022.6.20.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="2022.6.21.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2022.6.23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2022.6.24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2022.6.27.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2022.6.22.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="2022.6.28.h">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

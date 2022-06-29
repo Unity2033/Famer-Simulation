@@ -1,95 +1,115 @@
 #include <iostream>
-#include <queue>
-#include <vector>
 
-int data = 7;
-int check[7];
-std::vector<int> vertex[8];
+struct Node
+{
+	int data;
+	Node* next;
+};
 
+class Linkedlist 
+{
+private :
+	Node * head;
+	Node * tail;
+
+public:
+	Linkedlist()
+	{
+		head = NULL;
+		tail = NULL;
+	}
+    
+	void FrontNode(int data)
+	{
+		Node * headNode = new Node;
+		headNode->data = data;
+
+		// 링크드 리스트가 비어있다면 첫번째 Node에 headNode를 추가합니다.
+		if (head == NULL)
+		{
+			head = headNode;
+			tail = headNode;
+		}
+		else // 링크드 리스트에 데이터가 있다면 headNode의 다음 가리키는 주소를 head로 설정합니다.
+		{
+			headNode->next = head;
+			head = headNode;
+		}
+	}
+
+	void LastNode(int data)
+	{
+		Node * tailNode = new Node;
+		tailNode->data = data;
+		tailNode->next = NULL;
+
+		// 링크드 리스트가 비어있다면 첫번째 Node에 headNode를 추가합니다.
+		if (head == NULL)
+		{
+			head = tailNode;
+			tail = tailNode;
+		}
+		else // 링크드 리스트에 데이터가 있다면 headNode의 다음 가리키는 주소를 head로 설정합니다.
+		{
+			tail->next = tailNode;
+			tail = tailNode;
+		}
+	}
+
+	void InsertNode(Node * PrevNode, int data)
+	{
+		Node * addNode = new Node;
+		addNode->data = data;
+
+		// 삽입 할 앞 Node의 next 포인터를 addNode의 next에 저장합니다.
+		addNode->next = PrevNode->next;
+		
+		// addNode앞의  Node의 next 포인터를 addNode로 저장합니다.
+		PrevNode->next = addNode;
+	}
+
+	void DeleteNode(Node * PrevNode)
+	{
+		// 삭제할 Node를 임시 Node에 저장합니다.
+		// 삭제할 Node의 1 단계 전 Node의 Next 포인터
+		Node * tempNode = PrevNode->next;
+
+		// 삭제할 Node를 제외합니다.
+		// 삭제할 Node의 Next 포인터를 1 단계 전 Node의 next 포인터를 저장합니다.
+		PrevNode->next = tempNode->next;
+
+		delete tempNode;
+	}
+
+	void ShowData(Node * head)
+	{
+		if (head == NULL)
+		{
+			return;
+		}
+		else
+		{
+			std::cout << head->data << " ";
+			ShowData(head->next);
+		}
+	}
+
+	Node * GetHead()
+	{
+		return head;
+	}
+};
 
 int main()
 {
-	// 주사위
-	/*
-	int dice[] = { 0,0,0 };
-	int max = 0;
-	int size = sizeof(dice) / sizeof(int);
+	Linkedlist list;
 
-	for (int i = 0; i < size; i++)
-	{
-		std::cin >> dice[i];
-	}
+	list.LastNode(1);
+	list.LastNode(20);
 
-	if (dice[0] == dice[1] && dice[0] == dice[2])
-	{
-		std::cout << 10000 + dice[0] * 10 << std::endl;
-	}
-	else if (dice[0] == dice[1] && dice[0] != dice[2])
-	{
-		std::cout << 1000 + dice[1] * 100 << std::endl;
-	}
-	else if (dice[0] == dice[1] && dice[0] != dice[2])
-	{
-		std::cout << 1000 + dice[0] * 100 << std::endl;
-	}
-	else if (dice[0] != dice[1] && dice[1] == dice[2])
-	{
-		std::cout << 1000 + dice[1] * 100 << std::endl;
-	}
-	else
-	{
-		for (int i = 0; i < size; i++)
-		{
-			if (max <= dice[i])
-			{
-				max = dice[i];
-			}
-		}
+	list.DeleteNode(list.GetHead());
 
-		std::cout << max << std::endl;
-	}
-	*/
-		
-	// 너비 우선 탐색
-	// 1과 2를 연결합니다.
-	vertex[1].push_back(2);
-	vertex[2].push_back(1);
-
-	// 1과 3을 연결합니다.
-	vertex[1].push_back(3);
-	vertex[3].push_back(1);
-
-	// 2와 3을 연결합니다.
-	vertex[2].push_back(3);
-	vertex[3].push_back(2);
-
-	// 2와 4를 연결합니다.
-	vertex[2].push_back(4);
-	vertex[4].push_back(2);
-
-	// 2와 5를 연결합니다.
-	vertex[2].push_back(5);
-	vertex[5].push_back(2);
-
-	// 4와 5를 연결합니다.
-	vertex[4].push_back(5);
-	vertex[5].push_back(4);
-
-	// 3과 6을 연결합니다.
-	vertex[3].push_back(6);
-	vertex[6].push_back(3);
-
-	// 3과 7을 연결합니다.
-	vertex[3].push_back(7);
-	vertex[7].push_back(3);
-
-	// 6과 7을 연결합니다.
-	vertex[6].push_back(7);
-	vertex[7].push_back(6);
-
-		
-
-
+	list.ShowData(list.GetHead());
 
 	return 0;
 }

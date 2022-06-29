@@ -149,7 +149,15 @@
     <ClInclude Include="2022.6.16.h" />
     <ClInclude Include="2022.6.17.h" />
     <ClInclude Include="2022.6.20.h" />
+    <ClInclude Include="2022.6.21.h" />
+    <ClInclude Include="2022.6.23.h" />
+    <ClInclude Include="2022.6.24.h" />
+    <ClInclude Include="2022.6.27.h" />
     <ClInclude Include="2022.6.9.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2022.6.22.h" />
+    <None Include="2022.6.28.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
