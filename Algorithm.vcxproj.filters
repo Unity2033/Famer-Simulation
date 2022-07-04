@@ -56,6 +56,15 @@
     <ClInclude Include="2022.6.27.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="2022.6.29.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2022.6.30.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2022.7.1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="2022.6.22.h">

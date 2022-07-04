@@ -153,7 +153,10 @@
     <ClInclude Include="2022.6.23.h" />
     <ClInclude Include="2022.6.24.h" />
     <ClInclude Include="2022.6.27.h" />
+    <ClInclude Include="2022.6.29.h" />
+    <ClInclude Include="2022.6.30.h" />
     <ClInclude Include="2022.6.9.h" />
+    <ClInclude Include="2022.7.1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="2022.6.22.h" />
