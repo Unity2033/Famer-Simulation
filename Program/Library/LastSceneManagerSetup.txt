@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class 2th (Export Package)/Scenes/Scene.unity
+- path: Assets/Class 3th (Animator)/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

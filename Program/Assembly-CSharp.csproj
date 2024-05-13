@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class 2th (Export Package)\Scripts\Data.cs" />
+    <Compile Include="Assets\Class 3th (Animator)\Scripts\Doozy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
