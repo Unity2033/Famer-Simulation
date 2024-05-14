@@ -60,8 +60,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Life.cs" />
     <Compile Include="Assets\Class 2th (Export Package)\Scripts\Data.cs" />
     <Compile Include="Assets\Class 3th (Animator)\Scripts\Doozy.cs" />
+    <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Sphere.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
