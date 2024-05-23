@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class 5th (Collider)\Scripts\Cube.cs" />
+    <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\DestroyManager.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\CreateManager.cs" />
     <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Life.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Factory.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Class 2th (Export Package)\Scripts\Data.cs" />
     <Compile Include="Assets\Class 3th (Animator)\Scripts\Doozy.cs" />
     <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Class 10th (Prefab System)\Scripts\Box.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Slime.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Wraith.cs" />
     <Compile Include="Assets\Class 8th (Transform)\Scripts\Player.cs" />
