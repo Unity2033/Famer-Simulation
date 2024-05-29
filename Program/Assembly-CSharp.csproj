@@ -81,6 +81,7 @@
     <Compile Include="Assets\Class 7th (Sound)\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Class 12th (Animation Blend Tree)\Scripts\Timmy.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Unit.cs" />
+    <Compile Include="Assets\Class 14th (Coroutine)\Scripts\TimeManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
