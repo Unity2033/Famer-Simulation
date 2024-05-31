@@ -74,6 +74,7 @@
     <Compile Include="Assets\Class 2th (Export Package)\Scripts\Data.cs" />
     <Compile Include="Assets\Class 3th (Animator)\Scripts\Doozy.cs" />
     <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Class 16th (Physics)\Scripts\UIManager.cs" />
     <Compile Include="Assets\Class 10th (Prefab System)\Scripts\Box.cs" />
     <Compile Include="Assets\Class 11th (RayCast)\Scripts\Health.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Slime.cs" />
@@ -84,6 +85,8 @@
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Unit.cs" />
     <Compile Include="Assets\Class 15th (Animation Event)\Scirpts\Bot.cs" />
     <Compile Include="Assets\Class 14th (Coroutine)\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Class 16th (Physics)\Scripts\Ball.cs" />
+    <Compile Include="Assets\Class 16th (Physics)\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
