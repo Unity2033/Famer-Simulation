@@ -19,6 +19,11 @@ public class Ball : MonoBehaviour
     {
         if (gameManager.State == false)
         {
+            rigidBody.useGravity = false;
+            rigidBody.freezeRotation = true;
+
+            rigidBody.Sleep();
+
             return;
         }
 

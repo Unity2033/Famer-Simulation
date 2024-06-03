@@ -73,6 +73,7 @@
     <Compile Include="Assets\Class 11th (RayCast)\Scripts\Mouse.cs" />
     <Compile Include="Assets\Class 2th (Export Package)\Scripts\Data.cs" />
     <Compile Include="Assets\Class 3th (Animator)\Scripts\Doozy.cs" />
+    <Compile Include="Assets\Class 16th (Physics)\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Sphere.cs" />
     <Compile Include="Assets\Class 16th (Physics)\Scripts\UIManager.cs" />
     <Compile Include="Assets\Class 10th (Prefab System)\Scripts\Box.cs" />
