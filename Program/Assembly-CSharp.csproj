@@ -64,6 +64,7 @@
     <Compile Include="Assets\Class 5th (Collider)\Scripts\Cube.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\DestroyManager.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\CreateManager.cs" />
+    <Compile Include="Assets\Class 18th (Light)\Scripts\DataManager.cs" />
     <Compile Include="Assets\Class 13th (Animation Clip)\Scripts\Parallax.cs" />
     <Compile Include="Assets\Class 4th (Life Cycle)\Scripts\Life.cs" />
     <Compile Include="Assets\Class 9th (Instantiate &amp; Destroy)\Scripts\Factory.cs" />
