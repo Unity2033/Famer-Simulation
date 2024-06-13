@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "Program.csproj", "{9C45520C-7786-4944-AFD2-E2429781F5DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class1th (Single Linked List)", "..\Class1th (Single Linked List)\Class1th (Single Linked List).csproj", "{A0D85B72-C03D-4483-A770-50FF82C382AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class1th (Single Linked List)", "..\Class1th (Single Linked List)\Class1th (Single Linked List).csproj", "{A0D85B72-C03D-4483-A770-50FF82C382AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class2th (Double Linked List)", "..\Class2th (Double Linked List)\Class2th (Double Linked List).csproj", "{663F1B11-AAFE-4B0D-9423-A375B5A650DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A0D85B72-C03D-4483-A770-50FF82C382AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D85B72-C03D-4483-A770-50FF82C382AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D85B72-C03D-4483-A770-50FF82C382AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663F1B11-AAFE-4B0D-9423-A375B5A650DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663F1B11-AAFE-4B0D-9423-A375B5A650DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663F1B11-AAFE-4B0D-9423-A375B5A650DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663F1B11-AAFE-4B0D-9423-A375B5A650DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
