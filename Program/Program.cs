@@ -1,52 +1,95 @@
 ﻿namespace Program
 {
-    public class CircleLinkedList<T>
+    public class Stack<T>
     {
-        private int size;
-
-        private class Node
+        private int top;
+    
+        private readonly int arraySize; 
+        private T error;
+        private T [] array;
+    
+        public Stack()
         {
-            public T data;
-            public Node next;
+            top = -1;
+            arraySize = 10;
+            array = new T[arraySize];
         }
 
-        private Node head;
-
-        public CircleLinkedList()
+        public void Push(T data)
         {
-            size = 0;
-            head = null;
-        }
-
-        public void PushBack(T data)
-        {
-            Node newNode = new Node();
-
-            newNode.data = data;
-
-            if(head == null)
+            if (top >= arraySize - 1)
             {
-                head = newNode;
-
-                newNode.next = head;
+                Console.WriteLine("Stack Overflow");
             }
             else
             {
-                newNode.next = head.next;
+                array[++top] = data;
+            }
+        }
 
-                head.next = newNode;
+        public T Peek()
+        {
+            return array[top];
+        }
 
-                head = newNode;
+        public T Pop()
+        {
+            if (top <= -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return error;
+            }
+            else
+            {
+                return array[top--];
+            }
+        }
+
+        public bool Constains(T data)
+        {
+            for(int i = 0; i <= top; i++)
+            {
+                if (array[i].ToString() == data.ToString())
+                {
+                    return true;              
+                }
             }
 
+            return false;
         }
     }
 
     internal class Program
     {
+        // static bool CheckBracket(string content)
+        // {
+        //     if(content.Length <= 0)
+        //     {
+        //         return false;
+        //     }
+        // 
+        //     Stack<char> stack = new Stack<char>();
+        // 
+        // }
+
         static void Main(string [] args)
         {
-         
+            Stack<int> stack = new Stack<int>();
+
+            // stack.Push(10);
+            // stack.Push(20);
+            // stack.Push(30);
+            // stack.Push(40);
+            // stack.Push(50);
+            // 
+            // Console.WriteLine("Stack의 Constains() : " + stack.Constains(99));
+            // 
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
         }
     }
 }
