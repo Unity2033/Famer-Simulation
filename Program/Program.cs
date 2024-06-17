@@ -1,95 +1,31 @@
 ﻿namespace Program
 {
-    public class Stack<T>
+    public class CircleQueue<T>
     {
-        private int top;
-    
-        private readonly int arraySize; 
-        private T error;
+        private int count;
+        private int rear;
+        private int front;
+        
+        private int arraySize;
         private T [] array;
-    
-        public Stack()
+        
+        public CircleQueue()
         {
-            top = -1;
-            arraySize = 10;
+            count = 0;
+            arraySize = 5;
+
+            front = arraySize - 1;
+            rear = arraySize - 1;
+
             array = new T[arraySize];
-        }
-
-        public void Push(T data)
-        {
-            if (top >= arraySize - 1)
-            {
-                Console.WriteLine("Stack Overflow");
-            }
-            else
-            {
-                array[++top] = data;
-            }
-        }
-
-        public T Peek()
-        {
-            return array[top];
-        }
-
-        public T Pop()
-        {
-            if (top <= -1)
-            {
-                Console.WriteLine("Stack is Empty");
-                return error;
-            }
-            else
-            {
-                return array[top--];
-            }
-        }
-
-        public bool Constains(T data)
-        {
-            for(int i = 0; i <= top; i++)
-            {
-                if (array[i].ToString() == data.ToString())
-                {
-                    return true;              
-                }
-            }
-
-            return false;
         }
     }
 
     internal class Program
     {
-        // static bool CheckBracket(string content)
-        // {
-        //     if(content.Length <= 0)
-        //     {
-        //         return false;
-        //     }
-        // 
-        //     Stack<char> stack = new Stack<char>();
-        // 
-        // }
-
         static void Main(string [] args)
         {
-            Stack<int> stack = new Stack<int>();
-
-            // stack.Push(10);
-            // stack.Push(20);
-            // stack.Push(30);
-            // stack.Push(40);
-            // stack.Push(50);
-            // 
-            // Console.WriteLine("Stack의 Constains() : " + stack.Constains(99));
-            // 
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
-            // Console.WriteLine("Stack의 Pop : " + stack.Pop());
+           
         }
     }
 }
