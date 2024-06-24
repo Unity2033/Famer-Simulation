@@ -1,113 +1,67 @@
-﻿using System.Collections;
-
-namespace Program
+﻿namespace Program
 {
-    public class HashTable<KEY, VALUE>
+    public class Node
     {
-        private class Node
-        {
-            public KEY key;
-            public VALUE value;
+        public int data;
 
-            public Node next;
-        }
-
-        private class Bucket
-        {
-            public int count;
-
-            public Node head;
-        }
-
-        private Bucket [] bucket; 
-        private readonly int arraySize;
-
-        public HashTable()
-        {
-            arraySize = 6;
-            bucket = new Bucket[arraySize];
-
-            for(int i = 0; i < arraySize; i++)
-            {
-                bucket[i] = new Bucket();
-            }
-        }
-
-        private int HashFunction(KEY key)
-        {
-            return int.Parse(key.ToString()) % arraySize;
-        }
-
-        private Node CreateNode(KEY key, VALUE value)
-        {
-            Node newNode = new Node();
-
-            newNode.key = key;
-
-            newNode.value = value;
-
-            newNode.next = null;
-
-            return newNode;
-        }
-
-        public void Insert(KEY key, VALUE value)
-        {
-            // 해시 함수를 통해서 값을 받는 임시 변수
-            int hashIndex = HashFunction(key);
-
-            // 새로운 노드를 생성합니다.
-            Node newNode = CreateNode(key, value);
-
-            // 노드가 1개라도 존재하지 않는다면
-            if (bucket[hashIndex].count <= 0)
-            {
-                // 1. bucket[hashIndex]의 head 포인터에 새로운 노드를 저장합니다.
-                bucket[hashIndex].head = newNode;
-
-                bucket[hashIndex].count++;
-            }
-            else // 노드가 1개라도 존재한다면
-            {
-                // 1. newNode의 next에 bucket[hashIndex]의 head값을 저장합니다.
-                newNode.next = bucket[hashIndex].head;
-
-                // 2. bucket[hashIndex].head를 방금 생성한 노드의 주소를 가리키게 합니다.
-                bucket[hashIndex].head = newNode;
-
-                // 3. bucket[hashIndex]의 count 변수의 값을 증가시킵니다.
-                bucket[hashIndex].count++;
-            }
-        }
-       
-        public void Show()
-        {
-            for(int i = 0; i < arraySize; i++)
-            {
-                Node currentNode = bucket[i].head;
-
-                while(currentNode != null)
-                {
-                    Console.Write("[" + i + "] " + "KEY : " + currentNode.key + " VALUE : " + currentNode.value + " ");
-                    currentNode = currentNode.next;
-                }
-
-                Console.WriteLine();
-            }
-        }
+        public Node left;
+        public Node right;
     }
 
     internal class Program
     {
+        static Node CreateNode(int data, Node left, Node right)
+        {
+            Node newNode = new Node();
+
+            newNode.data = data;
+
+            newNode.left = left;
+
+            newNode.right = right;
+
+            return newNode;
+        }
+
+        // 전위 순회
+        // 1. root Node를 방문합니다.
+        // 2. 왼쪽 자식 노드를 전위 순회합니다.
+        // 3. 오른쪽 자식 노드를 전위 순회합니다.
+
+        static void Preorder(Node root)
+        {
+            if(root != null)
+            {
+                Console.Write(root.data + " ");
+                Preorder(root.left);
+                Preorder(root.right);
+            }
+        }
+
+        static void Inorder(Node root)
+        {
+            if(root != null)
+            {
+                Inorder(root.left);
+                Console.Write(root.data + " ");
+                Inorder(root.right);
+            }
+        }
+
         static void Main(string[] args)
         {
-            HashTable<int, string> hashTable = new HashTable<int, string>();
+            Node node7 = CreateNode(7, null, null);
+            Node node6 = CreateNode(6, null, null);
+            Node node5 = CreateNode(5, null, null);
+            Node node4 = CreateNode(4, null, null);
 
-            hashTable.Insert(10, "Diamond");
-            hashTable.Insert(6, "Ruby");
-            hashTable.Insert(4, "Sapphire");
+            Node node3 = CreateNode(3, node6, node7);
+            Node node2 = CreateNode(2, node4, node5);
 
-            hashTable.Show();
+            Node node1 = CreateNode(1, node2, node3);
+
+            //Preorder(node1);
+            Inorder(node1);
         }
     }
 }

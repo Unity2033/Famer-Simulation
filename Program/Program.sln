@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class7th (Vector)", "..\Cla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class8th (String)", "..\Class8th (String)\Class8th (String).csproj", "{C2EBFE97-127E-45BA-8AB2-A04AA994DA1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class9th (File Input & Output)", "..\Class9th (File Input & Output)\Class9th (File Input & Output).csproj", "{FA914ED9-7828-4C7A-A72D-D89B87940101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class9th (File Input & Output)", "..\Class9th (File Input & Output)\Class9th (File Input & Output).csproj", "{FA914ED9-7828-4C7A-A72D-D89B87940101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class10th (Hash Table)", "..\Class10th (Hash Table)\Class10th (Hash Table).csproj", "{6A2E5BFD-6311-49C6-9E9E-ACB7B04F1A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{FA914ED9-7828-4C7A-A72D-D89B87940101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA914ED9-7828-4C7A-A72D-D89B87940101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA914ED9-7828-4C7A-A72D-D89B87940101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2E5BFD-6311-49C6-9E9E-ACB7B04F1A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2E5BFD-6311-49C6-9E9E-ACB7B04F1A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2E5BFD-6311-49C6-9E9E-ACB7B04F1A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2E5BFD-6311-49C6-9E9E-ACB7B04F1A95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
