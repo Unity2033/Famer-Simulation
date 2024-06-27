@@ -1,53 +1,131 @@
-﻿namespace Program
-{  
-    public class AdjacencyList<T>
-    {
-        private class Node
-        {
-            private T data;
-            private Node next;
+﻿using System.Security;
 
-            public Node(T data, Node link = null)
+namespace Program
+{  
+    public class BinarySearchTree
+    {
+        public class Node
+        {
+            public int data;
+            public Node left;
+            public Node right;
+        }
+
+        public Node root;
+
+        public BinarySearchTree()
+        {
+            root = null;
+        }
+
+        Node CreateNode (int data)
+        {
+            Node node = new Node();
+
+            node.data = data;
+
+            node.left = null;
+
+            node.right = null;
+
+            return node;
+        }
+
+        public bool Find(int data)
+        {
+            Node currentNode = root;
+
+            while (currentNode != null)
             {
-                this.data = data;
-                next = link;
+                if(currentNode.data == data)
+                {
+                    return true;
+                }
+                else
+                {
+                    if(currentNode.data > data)
+                    {
+                        currentNode = currentNode.left;
+                    }
+                    else
+                    {
+                        currentNode = currentNode.right;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public void Insert(int data)
+        {
+            if(root == null)
+            {
+                root = CreateNode(data);
+            }
+            else
+            {
+                Node currentNode = root;
+
+                while(currentNode != null)
+                {
+                    if (currentNode.data > data)
+                    {
+                        if (currentNode.left == null)
+                        {
+                            currentNode.left = CreateNode(data);
+                            break;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.left;
+                        }
+                    }
+                    else
+                    {
+                        if(currentNode.right == null)
+                        {
+                            currentNode.right = CreateNode(data);
+                            break;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.right;
+                        }
+                    }
+                }
             }
         }
 
-        private int size; // 정점의 개수
-        private int arraySize; // 인접 리스트의 크기
-
-        private T [ ] vertex; // 정점의 집합
-        private Node [ ] list; // 인접 리스트
-
-        public AdjacencyList()
+        public void Inorder(Node root)
         {
-            size = 0;
-            arraySize = 10;
-
-            vertex = new T[ arraySize ];
-            list = new Node[ arraySize ];
+            if (root != null)
+            {
+                Inorder(root.left);
+                Console.Write(root.data + " ");
+                Inorder(root.right);
+            }
         }
-
-    } 
+    }
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            #region 인접 리스트
-            // 그래프의 각 정점에 인접한 정점들을 연결 리스트로
-            // 표현하는 방법입니다.
+            BinarySearchTree binarySearchTree = new BinarySearchTree();
 
-            // 장점 
-            // 그래프의 모든 간선의 수를 O(V+E)로 표현할 수 있습니다.
+            binarySearchTree.Insert(10);
+            binarySearchTree.Insert(7);
+            binarySearchTree.Insert(12);
+            binarySearchTree.Insert(5);
+            binarySearchTree.Insert(9);
 
-            // 단점
-            // 두 정점을 연결하는 간선을 조회하거나 정점의 차수를 알기
-            // 위해서 정점의 인접 리스트를 모두 탐색해야 하므로,
-            // 정점의 차수만큼의 시간이 필요합니다.
+            binarySearchTree.Inorder(binarySearchTree.root);
 
-            #endregion
+            Console.WriteLine();
+
+            Console.WriteLine("binarySearchTree Find(7) : " + binarySearchTree.Find(7));
+            Console.WriteLine("binarySearchTree Find(11) : " + binarySearchTree.Find(11));
 
         }
     }
