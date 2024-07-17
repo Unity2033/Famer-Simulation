@@ -17,9 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class5th (Insert Sort)", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class6th (Shell Sort)", "..\Class6th (Shell Sort)\Class6th (Shell Sort).csproj", "{111C4B18-8CAD-457C-A2DE-4743EF2FAAED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class7th (Count Sort)", "..\Class7th (Count Sort)\Class7th (Count Sort).csproj", "{E4E93A23-58D8-4704-9720-991D00A4C409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class7th (Count Sort)", "..\Class7th (Count Sort)\Class7th (Count Sort).csproj", "{E4E93A23-58D8-4704-9720-991D00A4C409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class8th (Two Pointer)", "..\Class8th (Two Pointer)\Class8th (Two Pointer).csproj", "{43131872-2291-43B8-93B0-8C4D1F076506}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class8th (Two Pointer)", "..\Class8th (Two Pointer)\Class8th (Two Pointer).csproj", "{43131872-2291-43B8-93B0-8C4D1F076506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class9th (Binary Search)", "..\Class9th (Binary Search)\Class9th (Binary Search).csproj", "{C75F7A23-B943-4ABA-8644-18F213CB7240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class10th (Divide & Conquer)", "..\Class10th (Divide & Conquer)\Class10th (Divide & Conquer).csproj", "{B624A8A2-DA11-4BDC-B6FA-15B7C912F173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{43131872-2291-43B8-93B0-8C4D1F076506}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43131872-2291-43B8-93B0-8C4D1F076506}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43131872-2291-43B8-93B0-8C4D1F076506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75F7A23-B943-4ABA-8644-18F213CB7240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75F7A23-B943-4ABA-8644-18F213CB7240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75F7A23-B943-4ABA-8644-18F213CB7240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75F7A23-B943-4ABA-8644-18F213CB7240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B624A8A2-DA11-4BDC-B6FA-15B7C912F173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B624A8A2-DA11-4BDC-B6FA-15B7C912F173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B624A8A2-DA11-4BDC-B6FA-15B7C912F173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B624A8A2-DA11-4BDC-B6FA-15B7C912F173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
