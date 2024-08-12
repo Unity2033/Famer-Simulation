@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class2th (Script)\Scripts\Bear.cs" />
+    <Compile Include="Assets\Class3th (Life Cycle)\Scripts\Life.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Class1th (Gizmo System)\Quirky Series Ultimate\_Shader\SoftSurface.shader" />
