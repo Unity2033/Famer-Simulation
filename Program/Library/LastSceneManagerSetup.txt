@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class5th (Translate)/Scenes/Class 5th Scene.unity
+- path: Assets/Class6th (Animator)/Scenes/Class 6th Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
