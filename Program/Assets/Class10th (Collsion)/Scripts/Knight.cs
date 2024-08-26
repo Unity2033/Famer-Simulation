@@ -12,10 +12,15 @@ public enum State
 public class Knight : MonoBehaviour
 {
     [SerializeField] State state;
+    [SerializeField] Animator animator;
+    [SerializeField] float speed = 2.5f;
+
+    private WaitForSeconds waitForSeconds = new WaitForSeconds(5.0f);
 
     void Start()
     {
-        
+        state = State.WALK;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -33,17 +38,25 @@ public class Knight : MonoBehaviour
 
     public void Walk()
     {
-        Debug.Log("Walk");
+        animator.SetBool("Attack", false);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     public void Attack()
     {
-        Debug.Log("Attack");
+        animator.SetBool("Attack", true);
     }
 
     public void Die()
     {
-        Debug.Log("Die");
+        animator.Play("Die");
+    }
+
+    private IEnumerator KonckBack(Collider other)
+    {
+        yield return waitForSeconds;
+
+        other.transform.position += new Vector3(0, 0, -3);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,7 +64,9 @@ public class Knight : MonoBehaviour
         // OnTriggerEnter() : 게임 오브젝트가 물리적이지 않은 충돌을 했을 때
         //                    호출되는 이벤트 함수입니다.
 
+        state = State.ATTACK;
 
+        StartCoroutine(KonckBack(other));
     }
 
     private void OnTriggerStay(Collider other)
@@ -67,7 +82,7 @@ public class Knight : MonoBehaviour
         // OnTriggerExit() : 게임 오브젝트가 물리적이지 않을 충돌이 벗어났을 때
         //                   호출되는 이벤트 함수입니다.
 
-        Debug.Log("OnTriggerExit");
+        state = State.DIE;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -77,6 +92,8 @@ public class Knight : MonoBehaviour
 
         Debug.Log("OnCollisionEnter");
     }
+
+
 
     private void OnCollisionStay(Collision collision)
     {
