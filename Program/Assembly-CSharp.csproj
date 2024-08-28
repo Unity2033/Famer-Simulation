@@ -71,6 +71,7 @@
     <Compile Include="Assets\Class7th (User Interface)\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Class9th (Instantiate)\Scripts\Select.cs" />
     <Compile Include="Assets\Class9th (Instantiate)\Scripts\CreateManager.cs" />
+    <Compile Include="Assets\Class12th (RayCast)\Scripts\Mouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Class1th (Gizmo System)\Quirky Series Ultimate\_Shader\SoftSurface.shader" />
