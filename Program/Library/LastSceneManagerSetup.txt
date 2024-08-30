@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class13th (Light System)/Scenes/Class 13th Scene.unity
+- path: Assets/Class14th (Physics)/Scenes/Class 14th Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Class12th (RayCast)\Scripts\Bed.cs" />
     <Compile Include="Assets\Class4th (GetComponent)\Scripts\Monster.cs" />
+    <Compile Include="Assets\Class14th (Physics)\Scripts\Control.cs" />
     <Compile Include="Assets\Class5th (Translate)\Scripts\AirCraft.cs" />
     <Compile Include="Assets\Class12th (RayCast)\Scripts\Chair.cs" />
     <Compile Include="Assets\Class10th (Collsion)\Scripts\Knight.cs" />
