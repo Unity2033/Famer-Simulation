@@ -69,6 +69,7 @@
     <Compile Include="Assets\Class10th (Collsion)\Scripts\Knight.cs" />
     <Compile Include="Assets\Class2th (Script)\Scripts\Bear.cs" />
     <Compile Include="Assets\Class14th (Physics)\Scripts\BilliardBall.cs" />
+    <Compile Include="Assets\Class16th (Animation Retargeting)\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Class11th (Sound)\Scripts\Dragon.cs" />
     <Compile Include="Assets\Class3th (Life Cycle)\Scripts\Life.cs" />
     <Compile Include="Assets\Class4th (GetComponent)\Scripts\Move.cs" />

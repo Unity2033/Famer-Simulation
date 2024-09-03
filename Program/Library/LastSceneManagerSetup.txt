@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class15th (Terrain)/Scenes/Class 15th Scene.unity
+- path: Assets/Class16th (Animation Retargeting)/Scenes/Class 16th Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
