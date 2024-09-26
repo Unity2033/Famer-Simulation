@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,14 +10,6 @@ public class SceneryManager : Singleton<SceneryManager>
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(AsyncLoad(1));
-        }
     }
 
     public IEnumerator FadeIn()
