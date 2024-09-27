@@ -23,7 +23,7 @@ public class SpeedManager : MonoBehaviour
     {
         while (speed < limitSpeed)
         {
-            yield return new WaitForSeconds(10);
+            yield return CoroutineCache.WaitForSecond(10);
 
             speed += increaseValue;
         }
