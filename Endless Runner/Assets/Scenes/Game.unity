@@ -412,6 +412,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7873187647639627565, guid: d1fc4adce7c359147b24dafa9a0e67db, type: 3}
   m_PrefabInstance: {fileID: 161901401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &278851392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278851394}
+  - component: {fileID: 278851393}
+  m_Layer: 0
+  m_Name: Obstacle Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &278851393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278851392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d751ce7a5138254c82e36e414afd3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createCount: 5
+  obstacleList: []
+--- !u!4 &278851394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278851392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &326781280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a416c843238bed4c9d55a79cd61c5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   speed: 25
   offset: 40
   roads:
@@ -3400,6 +3447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c951e1fa4c224a443954119a5f7c260d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   animator: {fileID: 0}
   roadLine: 0
   rigidBody: {fileID: 0}
@@ -5070,3 +5118,4 @@ SceneRoots:
   - {fileID: 825873162}
   - {fileID: 1497249556}
   - {fileID: 1125567840}
+  - {fileID: 278851394}
