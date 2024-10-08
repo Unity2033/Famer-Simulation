@@ -158,6 +158,11 @@ MonoBehaviour:
   - {fileID: 161901403}
   - {fileID: 1933154104}
   - {fileID: 326781282}
+  positionRandomX:
+  - {fileID: 1517710274}
+  - {fileID: 1246424721}
+  - {fileID: 1679067666}
+  obstacleManager: {fileID: 278851393}
   randomPositionZ:
   - 0
   - 0
