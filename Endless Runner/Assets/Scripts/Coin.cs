@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : State
+public class Coin : State, IHitable
 {
     [SerializeField] float speed;
 
     [SerializeField] GameObject rotationGameObject;
+
+    public void Activate()
+    {
+        gameObject.SetActive(false);
+    }
 
     private new void OnEnable()
     {
