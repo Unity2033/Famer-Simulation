@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 695314233532631456}
   - component: {fileID: 2355697787669567261}
   - component: {fileID: 4651899141090825037}
+  - component: {fileID: 7031821891155415822}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -220,7 +221,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8554479289625304442}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e6ddf69b1991f4848aaf76c4c9d42bcf, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -315,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {fileID: 0}
+  rotation: {fileID: 0}
   remoteCamera: {fileID: 3955262610136434429}
   rigidBody: {fileID: 0}
 --- !u!114 &4651899141090825037
@@ -331,6 +333,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: {x: 0, y: 0, z: 0}
+--- !u!114 &7031821891155415822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554479289625304442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ceb5b7e9f8b4984186256fc4edcb2d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 300
+  mouseX: 0
+  mouseY: 0
 --- !u!1001 &7005981469980896730
 PrefabInstance:
   m_ObjectHideFlags: 0
