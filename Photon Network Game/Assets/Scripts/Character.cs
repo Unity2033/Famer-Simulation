@@ -24,12 +24,16 @@ public class Character : MonoBehaviourPun
 
     void Update()
     {
+        if (photonView.IsMine == false) return;
+
         move.OnKeyUpdate();
         rotation.OnKeyUpdate();
     }
 
     private void FixedUpdate()
     {
+        if (photonView.IsMine == false) return;
+
         move.OnMove(rigidBody);
         rotation.RotateY(rigidBody);
     }
