@@ -1,5 +1,6 @@
 using UnityEngine;
 using Photon.Pun;
+using Photon.Pun.Demo.Cockpit;
 
 [RequireComponent(typeof(Move))]
 [RequireComponent(typeof(Rotation))]
@@ -25,6 +26,11 @@ public class Character : MonoBehaviourPun
     void Update()
     {
         if (photonView.IsMine == false) return;
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            MouseManager.Instance.SetMouse(true);
+        }
 
         move.OnKeyUpdate();
         rotation.OnKeyUpdate();
