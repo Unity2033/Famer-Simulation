@@ -978,6 +978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 3955262610136434429}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &7005981469980896730
 PrefabInstance:
   m_ObjectHideFlags: 0
