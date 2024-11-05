@@ -2,6 +2,7 @@ using UnityEngine;
 using Photon.Pun;
 using ExitGames.Client.Photon;
 using PlayFab.Internal;
+using Photon.Pun.UtilityScripts;
 
 [RequireComponent(typeof(Move))]
 [RequireComponent(typeof(Rotation))]
