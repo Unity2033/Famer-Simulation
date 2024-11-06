@@ -32,6 +32,7 @@ public class Character : MonoBehaviourPunCallbacks
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             MouseManager.Instance.SetMouse(true);
+            PopUpManager.Instance.Show(PopupType.PAUSE, "Ryu");
         }
 
         move.OnKeyUpdate();

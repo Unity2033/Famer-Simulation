@@ -4,8 +4,7 @@ using UnityEngine;
 
 public enum PopupType
 {
-    SIGNINFAILURE,
-    SIGNUPFAILURE,
+    TEXT,
     SIGNUP,
     PAUSE
 }
@@ -45,11 +44,13 @@ public class PopUpManager : MonoBehaviour
         }
         else
         {
-            popup = Instantiate(Resources.Load<GameObject>("Sign In Failure PopUp"));
+            popup = Instantiate(Resources.Load<GameObject>(popupType.ToString()));
 
             popup.transform.SetParent(parentTransform);
 
-            popup.GetComponent<PopUp>().SetData(content);
+            popup.GetComponent<RectTransform>().localPosition = new Vector2(0,0);
+
+            //popup.GetComponent<PopUp>().SetData(content);
 
             dictionary.Add(popupType, popup);
         }

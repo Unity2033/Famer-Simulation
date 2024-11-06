@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Pause : MonoBehaviourPunCallbacks
+public class Pause : PopUp
 {
-
-    public void Resume()
-    {
-        MouseManager.Instance.SetMouse(false);
-         
-        gameObject.SetActive(false);
-    }
-
     public void Exit()
     {
         PhotonNetwork.LeaveRoom();
@@ -23,4 +15,10 @@ public class Pause : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel("Lobby Scene");
     }
 
+    public override void OnConfirm()
+    {
+        MouseManager.Instance.SetMouse(false);
+
+        gameObject.SetActive(false);
+    }
 }
