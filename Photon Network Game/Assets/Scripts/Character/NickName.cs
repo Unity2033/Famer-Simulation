@@ -4,8 +4,13 @@ using UnityEngine.UI;
 
 public class NickName : MonoBehaviourPunCallbacks
 {
+    private Camera remoteCamera;
     [SerializeField] Text nickNameText;
-    [SerializeField] Camera remoteCamera;
+
+    private void Awake()
+    {
+        PhotonNetwork.NickName = PlayerPrefs.GetString("NickName");
+    }
 
     void Start()
     {

@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 394065291585056039}
   - component: {fileID: 5540640922317187151}
   - component: {fileID: 8613780847079965193}
-  - component: {fileID: 7176241153926278907}
+  - component: {fileID: 8549195691805349380}
   m_Layer: 0
   m_Name: TEXT
   m_TagString: Untagged
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7176241153926278907
+--- !u!114 &8549195691805349380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,10 +245,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7600900322078560578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53048ddeee7fdb74c90495034862f7bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 01219a9b7668bad4aaf3e937b93626f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 4563879011815369050}
+  content: {fileID: 4563879011815369050}
 --- !u!1 &8854159103985630094
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,9 +370,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7176241153926278907}
-        m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
-        m_MethodName: OnClose
+      - m_Target: {fileID: 8549195691805349380}
+        m_TargetAssemblyTypeName: Alarm, Assembly-CSharp
+        m_MethodName: OnConfirm
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

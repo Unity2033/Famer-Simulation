@@ -121,8 +121,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3254059336286072258}
   m_TextComponent: {fileID: 2224709893969289878}
   m_Placeholder: {fileID: 6752968362337067739}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -796,9 +796,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1036082128857497701}
-        m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
-        m_MethodName: OnClose
+      - m_Target: {fileID: 5591159310321507269}
+        m_TargetAssemblyTypeName: SignUp, Assembly-CSharp
+        m_MethodName: OnConfirm
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 6501492623664314317}
   - component: {fileID: 3456176097794858587}
   - component: {fileID: 8891956941755086852}
-  - component: {fileID: 1036082128857497701}
+  - component: {fileID: 5591159310321507269}
   m_Layer: 0
   m_Name: SIGNUP
   m_TagString: Untagged
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1036082128857497701
+--- !u!114 &5591159310321507269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -984,10 +984,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5964808280612002655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53048ddeee7fdb74c90495034862f7bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d9d3da2c6710f4a957e220705bff6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  emailInputField: {fileID: 4728030932639112954}
+  nickNameInputField: {fileID: 4359460376466118958}
+  passwordInputField: {fileID: 999855143068419549}
 --- !u!1 &6756950229547692077
 GameObject:
   m_ObjectHideFlags: 0
