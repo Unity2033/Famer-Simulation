@@ -419,6 +419,7 @@
 "Assets/Scripts/Equipment.cs"
 "Assets/Scripts/EquipmentManager.cs"
 "Assets/Scripts/Knife.cs"
+"Assets/Scripts/ManagerScripts/SingletonManager.cs"
 "Assets/Scripts/PhotonScripts/PhotonManager.cs"
 "Assets/Scripts/PhotonScripts/PlayfabManager.cs"
 "Assets/Scripts/ScreenShot.cs"

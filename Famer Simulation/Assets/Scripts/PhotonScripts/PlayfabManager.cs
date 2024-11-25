@@ -32,7 +32,8 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
         {
             Email = emailInput.text,
             Password = passwordInput.text,
-            RequireBothUsernameAndEmail = false
+            RequireBothUsernameAndEmail = false,
+            
         };
 
         PlayFabClientAPI.RegisterPlayFabUser
@@ -48,7 +49,7 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
         var request = new LoginWithEmailAddressRequest
         {
             Email = emailInput.text,
-            Password = passwordInput.text
+            Password = passwordInput.text,
         };
 
         PlayFabClientAPI.LoginWithEmailAddress
