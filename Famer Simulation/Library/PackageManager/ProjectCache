@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638685343726717554
+      ticks: 638685659858450607
     m_Hash: 1874045695
   m_LockFileStatus:
     m_FilePath: "C:/Users/nwond/OneDrive/\uBC14\uD0D5 \uD654\uBA74/Famer-Simulation/Famer
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638685343726717554
+      ticks: 638685659858450607
     m_Hash: 2297618853
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -122,12 +122,14 @@ m_ResolvedPackages:
     - 2.4.4
     - 2.5.1
     - 2.5.2
+    - 2.6.0
     compatible:
     - 2.3.1
     - 2.4.3
     - 2.4.4
     - 2.5.1
     - 2.5.2
+    - 2.6.0
     recommended: 2.3.1
     deprecated: []
   dependencies: []
