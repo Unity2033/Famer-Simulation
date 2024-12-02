@@ -18,7 +18,9 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.GameVersion = "1.0f";
 
-        PhotonNetwork.LoadLevel("Photon Lobby");
+        //PhotonNetwork.LoadLevel("Photon Lobby");
+
+        AsyncSceneLoadManager.Instance.AsyncSceneLoad("Photon Lobby");
     }
 
     public void Success(RegisterPlayFabUserResult result)

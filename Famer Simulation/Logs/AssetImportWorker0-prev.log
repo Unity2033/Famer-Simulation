@@ -15,7 +15,7 @@ C:/Users/nwond/OneDrive/바탕 화면/Famer-Simulation/Famer Simulation
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49609
+51865
 -job-worker-count
 5
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/nwond/OneDrive/바탕 화면/Famer-Simulation/Famer Simulation
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7656] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 1480076212 [EditorId] 1480076212 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [7656] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 1480076212 [EditorId] 1480076212 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13620] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 3265753499 [EditorId] 3265753499 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13620] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 3265753499 [EditorId] 3265753499 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 5.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,13 +79,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56040
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.010032 seconds.
-- Loaded All Assemblies, in  0.579 seconds
+Registered in 0.004361 seconds.
+- Loaded All Assemblies, in  0.444 seconds
 Native extension for Android target not found
 InvalidOperationException: Cannot start process because a file name has not been provided.
   at System.Diagnostics.Process.Start () [0x00024] in <021cf431c280472fb64b4fa24ddfe5f9>:0 
@@ -99,4 +99,730 @@ InvalidOperationException: Cannot start process because a file name has not been
   at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00081] in <0494c3641848448e94810128540ecc93>:0 
   at UnityEditor.Android.TargetExtension.OnLoad () [0x000ad] in <0494c3641848448e94810128540ecc93>:0 
   at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x000b9] in <8f5ff83e453e49179847370b820a0398>:0 
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.406 seconds
+Domain Reload Profiling: 848ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (150ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (160ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (407ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (357ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (121ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\nwond\OneDrive\바탕 화면\Famer-Simulation\Famer Simulation\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\nwond\OneDrive\바탕 화면\Famer-Simulation\Famer Simulation\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.106 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.021 seconds
+Domain Reload Profiling: 2122ms
+	BeginReloadAssembly (423ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (572ms)
+		LoadAssemblies (414ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (244ms)
+				TypeCache.ScanAssembly (218ms)
+			BuildScriptInfoCaches (27ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1022ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (809ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (709ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3534 unused Assets / (1.0 MB). Loaded Objects now: 4114.
+Memory consumption went from 116.3 MB to 115.3 MB.
+Total: 8.866400 ms (FindLiveObjects: 0.536800 ms CreateObjectMapping: 0.227800 ms MarkObjects: 6.534300 ms  DeleteObjects: 1.565900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 689672.645245 seconds.
+  path: Assets/PlayFabSDK/PlayFab.asmdef
+  artifactKey: Guid(0da6d172d18a54e4389d0dce1e1ffdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabSDK/PlayFab.asmdef using Guid(0da6d172d18a54e4389d0dce1e1ffdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07cb38596f1de39b8c2195c302bdc5cf') in 0.0073273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.323867 seconds.
+  path: Assets/polyperfect/Poly Universal Pack
+  artifactKey: Guid(b01bde89bfb1ab84e829aa58f1f5cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack using Guid(b01bde89bfb1ab84e829aa58f1f5cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c64b91aaae7bc4816b963ea9691d047d') in 0.0006165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.240515 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs
+  artifactKey: Guid(2f0f97661ded029478cf9558fb6d38eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs using Guid(2f0f97661ded029478cf9558fb6d38eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a93cb71f2b5967c0ed314798da0c37d') in 0.000599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056684 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/First Person Character.prefab
+  artifactKey: Guid(7fcfd2b2a44cc3e4d96f3a35ef7a2a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/First Person Character.prefab using Guid(7fcfd2b2a44cc3e4d96f3a35ef7a2a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '146cdb180df568db45f01722716b9b52') in 0.0341661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.847897 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools
+  artifactKey: Guid(a01149de24fef664cab8bcdc7eead962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools using Guid(a01149de24fef664cab8bcdc7eead962) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27716d3e8575fa26be01a0a3272aa46b') in 0.0005474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083858 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/axe-fireman.prefab
+  artifactKey: Guid(91e8801d0eec070479983fc6e35dbb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/axe-fireman.prefab using Guid(91e8801d0eec070479983fc6e35dbb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3eb4d762c966fdab809348b6c7aad170') in 0.3705234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/saw-folding.prefab
+  artifactKey: Guid(3db2efb64d1307f48ad18617db5c0ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/saw-folding.prefab using Guid(3db2efb64d1307f48ad18617db5c0ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78ec67986dfe21dd8bd44b88b867117a') in 0.032493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/brush-round.prefab
+  artifactKey: Guid(c4a16274284f2414d87fe69920fda35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/brush-round.prefab using Guid(c4a16274284f2414d87fe69920fda35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2b48b74f6aaed20619859e86f58e07f') in 0.023303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/keyhole-saw.prefab
+  artifactKey: Guid(a4a75c12553026e42bb90bbf5f7531b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/keyhole-saw.prefab using Guid(a4a75c12553026e42bb90bbf5f7531b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '225b7fb24a788ab73427309874f7ba89') in 0.0221945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/coping-saw.prefab
+  artifactKey: Guid(377fba8d414d7c645925bf29503520ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/coping-saw.prefab using Guid(377fba8d414d7c645925bf29503520ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8f4ce614860ffe3de757e46712e84b8') in 0.0212896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/telescoping-shovel.prefab
+  artifactKey: Guid(2d507fab30b8e7b46857eb695dd08f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/telescoping-shovel.prefab using Guid(2d507fab30b8e7b46857eb695dd08f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3e73b966ff7fca991d2c1c853d74a33') in 0.0229782 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/wrench.prefab
+  artifactKey: Guid(87ddd3dbff0aa374991873089250f14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/wrench.prefab using Guid(87ddd3dbff0aa374991873089250f14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f60c28c7256b4efd9a8bd886d7ba6d1f') in 0.023543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/caliper.prefab
+  artifactKey: Guid(bdb9b725fe77d084393db6219db6a6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/caliper.prefab using Guid(bdb9b725fe77d084393db6219db6a6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e73b883c0bd38c0c75c5737920dac383') in 0.0255057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/pocket-knife.prefab
+  artifactKey: Guid(642377535f1864e448922ad4983b2b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/pocket-knife.prefab using Guid(642377535f1864e448922ad4983b2b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c205f60a514a41c63a96f03448e957f') in 0.0373576 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/saw-two-man-crosscut.prefab
+  artifactKey: Guid(0a99f013639c1a44cbf1dc039c173b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/saw-two-man-crosscut.prefab using Guid(0a99f013639c1a44cbf1dc039c173b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bef780cd3ac66740c537cbf4e52617a') in 0.0244476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/ruler-triangle.prefab
+  artifactKey: Guid(1296eda2a51614145bde9ffaf36566b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/ruler-triangle.prefab using Guid(1296eda2a51614145bde9ffaf36566b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '987a280d40640b1e2a29c86e07dfa71c') in 0.0254589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/slim-trowel.prefab
+  artifactKey: Guid(19dc51782599ecf47b96036e72c1058b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/slim-trowel.prefab using Guid(19dc51782599ecf47b96036e72c1058b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e459d40603a950d987b7ee7759c7df4a') in 0.0247883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/back-saw.prefab
+  artifactKey: Guid(44a446d6a673986479b6f341f19f9752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/back-saw.prefab using Guid(44a446d6a673986479b6f341f19f9752) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2e53b62ad833d1c388011cbd2dc8691') in 0.0243714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/hammer-big.prefab
+  artifactKey: Guid(27803413c9f47ab4b924a4256cdc97f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/hammer-big.prefab using Guid(27803413c9f47ab4b924a4256cdc97f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84475d2152a5cd3b0527f127d01e4d38') in 0.0254463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/wrench-ratchet.prefab
+  artifactKey: Guid(5eea562d2262cf84a8261b4c16471ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Tools/wrench-ratchet.prefab using Guid(5eea562d2262cf84a8261b4c16471ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a73c50392df6403c419a4ac82cb67198') in 0.0239184 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.579544 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/almond.prefab
+  artifactKey: Guid(bc83fadbea8617642a1b296677750e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/almond.prefab using Guid(bc83fadbea8617642a1b296677750e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b3912b03c2ca30a9f2afe637fb82318') in 0.0024912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/cranberry.prefab
+  artifactKey: Guid(d00ea08e316da0c40abfb7226be7d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/cranberry.prefab using Guid(d00ea08e316da0c40abfb7226be7d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aef21acde4671954c916b33983e476fd') in 0.0018713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/hazelnut.prefab
+  artifactKey: Guid(9ee76406919adf04482de50ce7db3ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/hazelnut.prefab using Guid(9ee76406919adf04482de50ce7db3ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '714b07973dffc1b2ad33584253122069') in 0.0021911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-grilled-b.prefab
+  artifactKey: Guid(f52ed23fb2931cd4a87f5460e3ef0e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-grilled-b.prefab using Guid(f52ed23fb2931cd4a87f5460e3ef0e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63934a99a59312ca6a8acdbdf25afacd') in 0.0020681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-grilled-a.prefab
+  artifactKey: Guid(ab41bfc855d041341a958d39ef883800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-grilled-a.prefab using Guid(ab41bfc855d041341a958d39ef883800) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c828a9b2b8a61b51b44fde3cd254baf8') in 0.0018969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/chestnut-a.prefab
+  artifactKey: Guid(46a6529e1ceda1a4ab29fc785dddbece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/chestnut-a.prefab using Guid(46a6529e1ceda1a4ab29fc785dddbece) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6b47b3ec91ebd526290192cea68ee66') in 0.0020793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/redcurrant.prefab
+  artifactKey: Guid(5e7fc6194fcec344e822aef0254ee1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/redcurrant.prefab using Guid(5e7fc6194fcec344e822aef0254ee1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '824ab1ca7f828c089d4fd4ca44d7a5d0') in 0.0023925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/loganbery.prefab
+  artifactKey: Guid(e033907f9e520ff4b9bf7b9373db2842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/loganbery.prefab using Guid(e033907f9e520ff4b9bf7b9373db2842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95f62bf033087c8119b1f14f99786d9e') in 0.0019975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-b.prefab
+  artifactKey: Guid(e5e70b95d8762f8479dbc9c2cc711d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-b.prefab using Guid(e5e70b95d8762f8479dbc9c2cc711d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2211341f4000430ee8d4a0ac1f2dc94') in 0.0015136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-a.prefab
+  artifactKey: Guid(2a0520eae34a3164b8d8194e84a544a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Food/meat-a.prefab using Guid(2a0520eae34a3164b8d8194e84a544a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05ada5f878cda2754a6d56af2f948c96') in 0.0017809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.540878 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Materials/foliage-b.mat
+  artifactKey: Guid(86bf6aab1bbe3f6429090de6633a3c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Materials/foliage-b.mat using Guid(86bf6aab1bbe3f6429090de6633a3c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0c589f86ec106b41b1261ddd2114470') in 0.4488097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Materials/road-paved.mat
+  artifactKey: Guid(cfd1f323b091c834eb6681346f996a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Materials/road-paved.mat using Guid(cfd1f323b091c834eb6681346f996a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '555315cb1e4a55ae58a78cce9d05882f') in 0.2918944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Materials/universal-e.mat
+  artifactKey: Guid(d0adff56f35d4dc4a88d64c810e2e2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Materials/universal-e.mat using Guid(d0adff56f35d4dc4a88d64c810e2e2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53108b3f70447af8d8315d71e2089192') in 0.0302082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Materials/universal-a.mat
+  artifactKey: Guid(ec7ae897721ac3547aa48bf2961d00c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Materials/universal-a.mat using Guid(ec7ae897721ac3547aa48bf2961d00c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '486181cd76e2eb72d972747cd2d75267') in 0.0248308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Materials/universal-glass-night.mat
+  artifactKey: Guid(67ebe340f97be354c98766c2265fb834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Materials/universal-glass-night.mat using Guid(67ebe340f97be354c98766c2265fb834) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5aae7163ffa464030f05b25937fbc42c') in 0.2369987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.443249 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/FBXImporter-static.preset
+  artifactKey: Guid(7852157204fd8ae409d3957c1953789b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/FBXImporter-static.preset using Guid(7852157204fd8ae409d3957c1953789b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71c95f06526435bac7c86a0619a68772') in 0.0031926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.315672 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/axe-survival.fbx
+  artifactKey: Guid(40273545eaa3ffc4faaaf2f499a193ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/axe-survival.fbx using Guid(40273545eaa3ffc4faaaf2f499a193ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '137e94ca54dd678fc67724dee3f85ecd') in 0.2966097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/bow-divider.fbx
+  artifactKey: Guid(84cb512b17819ea4c90941b57185f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/bow-divider.fbx using Guid(84cb512b17819ea4c90941b57185f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e18aedd69df6ae19e3f5fd3c772463a0') in 0.0169352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/palette-knife.fbx
+  artifactKey: Guid(1cae9e01d7a063944ad71ce3481f8a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/palette-knife.fbx using Guid(1cae9e01d7a063944ad71ce3481f8a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f05e81f505f8f4a0f4e38aa30ee490af') in 0.0178261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/saw-folding.fbx
+  artifactKey: Guid(9befc122a3188d945bd35699dbd62391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/saw-folding.fbx using Guid(9befc122a3188d945bd35699dbd62391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3d90cd4c69d1115b4a6cee89cd2fc01') in 0.0264464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/screwdriver-flat.fbx
+  artifactKey: Guid(143e708f05f5abb43967483c548a5ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/screwdriver-flat.fbx using Guid(143e708f05f5abb43967483c548a5ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8e133e34f9a616a273b69e49d936b49') in 0.0160328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/pocket-knife.fbx
+  artifactKey: Guid(bda9a0c0efacd5a44b6ee87b793c0077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/pocket-knife.fbx using Guid(bda9a0c0efacd5a44b6ee87b793c0077) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5967a396c261f7a3deca03c9c8cd88bb') in 0.0280293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/hatchet-survival.fbx
+  artifactKey: Guid(2b53026252db28843a3558f34bdd34a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/hatchet-survival.fbx using Guid(2b53026252db28843a3558f34bdd34a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd00ea50a57019fb6c71478a2d824f7ad') in 0.0164102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/syringe.fbx
+  artifactKey: Guid(b6eee501d65c8bf41ba827e069079637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/syringe.fbx using Guid(b6eee501d65c8bf41ba827e069079637) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05f6924d040b91db098190339b41a951') in 0.0165098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/caliper.fbx
+  artifactKey: Guid(4b72abdf8d44d67499fa1b8c8b9894b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/caliper.fbx using Guid(4b72abdf8d44d67499fa1b8c8b9894b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d94d77b36297268b72294ef718a07bb') in 0.0173287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/hunting-knife.fbx
+  artifactKey: Guid(35bf4cddf137ae54ea04d2d10ac4eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Tools/hunting-knife.fbx using Guid(35bf4cddf137ae54ea04d2d10ac4eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdfc298daaa9bfa44c8a0968e21412bc') in 0.0161787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.768348 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-hill-20x20m-north-east.fbx
+  artifactKey: Guid(be4b7bd83017b174d8893c6804da04a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-hill-20x20m-north-east.fbx using Guid(be4b7bd83017b174d8893c6804da04a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efab9a1b3d5cb114c2a82fb240048a2b') in 0.0187941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-plain-5x5m.fbx
+  artifactKey: Guid(d81ddd0bb4907224da9a5ccdcb8df047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-plain-5x5m.fbx using Guid(d81ddd0bb4907224da9a5ccdcb8df047) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78cd27892247214d738d5e996b865a81') in 0.016486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-lake-10x10m.fbx
+  artifactKey: Guid(a937abdd18ba5a04280249ef68c8c51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-lake-10x10m.fbx using Guid(a937abdd18ba5a04280249ef68c8c51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '609a884c04c3cef10dcce29d44b2a2d6') in 0.0230821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-lake-20x20m.fbx
+  artifactKey: Guid(67e001da754100c499ad8ea279e8b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-lake-20x20m.fbx using Guid(67e001da754100c499ad8ea279e8b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30684fe8dbb739016cc67dce59f08e78') in 0.0198295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-valley-20x20m-north-east.fbx
+  artifactKey: Guid(d5c353bb41daedf40bc376dad34cf142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-valley-20x20m-north-east.fbx using Guid(d5c353bb41daedf40bc376dad34cf142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce4a5fa10d8ad287e8769676a06d5866') in 0.0179616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-slope-20x20m-north.fbx
+  artifactKey: Guid(0d5be37d9908f2241b7aee37b7fe9d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-slope-20x20m-north.fbx using Guid(0d5be37d9908f2241b7aee37b7fe9d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1a493e69466cb7d82254d90c61d7640') in 0.0186363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-valley-20x20m-south-east.fbx
+  artifactKey: Guid(2327c6e32af9e6f4088bb15bbf28bf20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-valley-20x20m-south-east.fbx using Guid(2327c6e32af9e6f4088bb15bbf28bf20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53b948099965f65be48b2ad92bf93fcb') in 0.0180678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-hill-20x20m-south-east.fbx
+  artifactKey: Guid(34cdcc7a197b6db4bb24dbf4cdbfa45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Meshes/Terrain/terrain-plane-hill-20x20m-south-east.fbx using Guid(34cdcc7a197b6db4bb24dbf4cdbfa45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bbd91f90d209c287fbfa6796904495a') in 0.0172439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.184916 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-plastic-open.prefab
+  artifactKey: Guid(8cb1db29146a84947be56638cf3e2d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-plastic-open.prefab using Guid(8cb1db29146a84947be56638cf3e2d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c964ec2a65368f42c4206ed09f9e550a') in 0.0266149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-e-farm.prefab
+  artifactKey: Guid(1a8a74b931305c149a03da7dddff7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-e-farm.prefab using Guid(1a8a74b931305c149a03da7dddff7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b5e190b2b605efa3e9f3c9f109a869a') in 0.0258607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/pole-electric-wire-20m-single.prefab
+  artifactKey: Guid(2354d24bd8e97384f97ffe118fab3939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/pole-electric-wire-20m-single.prefab using Guid(2354d24bd8e97384f97ffe118fab3939) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a81bbe12b241205772abe85ac95f7491') in 0.0265558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-c-full.prefab
+  artifactKey: Guid(e467d6115abcd754ca7fabf6fa2a28c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-c-full.prefab using Guid(e467d6115abcd754ca7fabf6fa2a28c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '834c2b11e017795ae38dbd422ad959af') in 0.0254653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/produce-stand-a-full-farm.prefab
+  artifactKey: Guid(1636a745b3f80b341bb8d66ed4c6035e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/produce-stand-a-full-farm.prefab using Guid(1636a745b3f80b341bb8d66ed4c6035e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84b3f532dd87ed51b98d8901c63a6b5c') in 0.0289099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/label-plant-a.prefab
+  artifactKey: Guid(061ae17349bddb7448906479e374b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/label-plant-a.prefab using Guid(061ae17349bddb7448906479e374b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24f81540a013aa178b75a1c7c5dc1adf') in 0.0269605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/birdhouse-b.prefab
+  artifactKey: Guid(7512e4c21f615734c91c040a7a18c0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/birdhouse-b.prefab using Guid(7512e4c21f615734c91c040a7a18c0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9799a9ec877e141bcc14cd6192accc0b') in 0.0240555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/tractor-tire-big.prefab
+  artifactKey: Guid(9654898b26753f94584c62ec39068a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/tractor-tire-big.prefab using Guid(9654898b26753f94584c62ec39068a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26197dab8c6bf2cb23de9db6d3398fd8') in 0.023102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-b-full.prefab
+  artifactKey: Guid(2ac62c87f6092b44cac7a0fc6fd7a184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-b-full.prefab using Guid(2ac62c87f6092b44cac7a0fc6fd7a184) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f603955517301341cc96460c4634deeb') in 0.0234619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/hay-drying-rack-triangle-b.prefab
+  artifactKey: Guid(008257e721682db4eb1a904c6fa4245f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/hay-drying-rack-triangle-b.prefab using Guid(008257e721682db4eb1a904c6fa4245f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccda36465fbb4d24a0b222e899550eac') in 0.0218697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/bowl-rabbit-a.prefab
+  artifactKey: Guid(2308b46d9a6a8e3418549b7036ddc9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/bowl-rabbit-a.prefab using Guid(2308b46d9a6a8e3418549b7036ddc9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '250c2304f1dacc430e00f9a9513c60d0') in 0.0234209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-wood-open.prefab
+  artifactKey: Guid(3601ceb7159810045a4aeef8a27d9315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-wood-open.prefab using Guid(3601ceb7159810045a4aeef8a27d9315) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '833aeb5c62ee11140de261f1ab475458') in 0.0255553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/pole-electric-wire-10m-single.prefab
+  artifactKey: Guid(4f242c80df7354140898ad2a007920d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/pole-electric-wire-10m-single.prefab using Guid(4f242c80df7354140898ad2a007920d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13963c5b16484482fe82581e7e0fbd1c') in 0.0236639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/hutch-b.prefab
+  artifactKey: Guid(9c1838f9af478ab49b80003392ea8f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/hutch-b.prefab using Guid(9c1838f9af478ab49b80003392ea8f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd13346dc55546b7163e79c0469ac5551') in 0.0274254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 62
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-b.prefab
+  artifactKey: Guid(7d65d630d9340794c949ed110fd39eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/trough-b.prefab using Guid(7d65d630d9340794c949ed110fd39eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd905e9b35605ca3c9ed08eb59890159b') in 0.0242354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-h-farm.prefab
+  artifactKey: Guid(45a6ab1847008df468dcf13026611cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-h-farm.prefab using Guid(45a6ab1847008df468dcf13026611cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8084cf9d2ea4aa974906c69cbf0d1c48') in 0.022892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-ranch.prefab
+  artifactKey: Guid(6538ca7c579b46e42912878a9723376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-ranch.prefab using Guid(6538ca7c579b46e42912878a9723376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de09f0a2a594b4461a1c3c8ede4c77ca') in 0.0246641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-g-farm.prefab
+  artifactKey: Guid(8e0a86091c3a5574d9e0556f563dd1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/basket-g-farm.prefab using Guid(8e0a86091c3a5574d9e0556f563dd1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '480436f7d359daf8c105a35db4c873a3') in 0.0237681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/toolrack-a.prefab
+  artifactKey: Guid(7cd37fd63bee3e14d9ea43cbf37c43f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/toolrack-a.prefab using Guid(7cd37fd63bee3e14d9ea43cbf37c43f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '403d7fb697eab404e33010f10dcdee85') in 0.0241506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-ranch-text.prefab
+  artifactKey: Guid(b54d907f34eb97044a66e83f5de70129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-ranch-text.prefab using Guid(b54d907f34eb97044a66e83f5de70129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d548a101c50386c72c5df185a59e39f') in 0.0253681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dog-house-c.prefab
+  artifactKey: Guid(b1f527f263a81ba45a88c06978d51b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dog-house-c.prefab using Guid(b1f527f263a81ba45a88c06978d51b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2c1a878f5ee4ab2d29951246dc88088') in 0.0231403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dirt-pile-small.prefab
+  artifactKey: Guid(71e1fb958af94314cba91e8e245777ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dirt-pile-small.prefab using Guid(71e1fb958af94314cba91e8e245777ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cd073a1eac83b4091807311e758a367') in 0.0242767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-blackboard-pumpkin.prefab
+  artifactKey: Guid(8525044389631b545a590fd0c2dd7c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/sign-blackboard-pumpkin.prefab using Guid(8525044389631b545a590fd0c2dd7c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3a87bfc8bf0897226640e2e37dcdb10') in 0.0253429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dovecote.prefab
+  artifactKey: Guid(c7330224e5c065e40abbf2fba4ab98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/dovecote.prefab using Guid(c7330224e5c065e40abbf2fba4ab98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a71f8e2e5eb423dc8193b81587c5fa76') in 0.0252277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/weather-vane-a.prefab
+  artifactKey: Guid(41bd365ffebb2864f8021af91e5cc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/weather-vane-a.prefab using Guid(41bd365ffebb2864f8021af91e5cc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92a4f3a7ad739567ddeada9823be47a9') in 0.0222333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-stand-2m-empty.prefab
+  artifactKey: Guid(25cad162a29577c498f713df96a489c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Poly Universal Pack/- Prefabs/Farm/barrel-stand-2m-empty.prefab using Guid(25cad162a29577c498f713df96a489c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '206555beebb49159a8b8d9307fd208e8') in 0.019822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
