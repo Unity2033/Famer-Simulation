@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class AreaControl : MonoBehaviour
 {
     [Header("¹üÀ§")]
@@ -108,3 +108,4 @@ public class AreaControl : MonoBehaviour
         script.OnOff(b);
     }
 }
+*/
