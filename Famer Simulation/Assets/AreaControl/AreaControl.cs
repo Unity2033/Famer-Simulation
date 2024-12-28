@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 public class AreaControl : MonoBehaviour
 {
     [Header("범위")]
@@ -35,12 +35,25 @@ public class AreaControl : MonoBehaviour
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        
+
         _dictionary[_Key] = () =>
         {
             switch (_Key)
             {
-                default:
+                case 1:// 수확에 대한 Enter
+                    UpdateEventSystem(true, "수확을 하시려면", "[E]");
+                    if (player != null)
+                    {
+                        player.GetComponent<Player_Control>().seed = gameObject;
+                    }
+                    break;
+
+                case 2:// 수확에 대한 Exit
+                    UpdateEventSystem(false);
+                    if (player != null)
+                    {
+                        player.GetComponent<Player_Control>().seed = null;
+                    }
                     break;
             }
         };
@@ -99,7 +112,7 @@ public class AreaControl : MonoBehaviour
 
         if (my == null)
         {
-            my = TotalUiControl._instance.Create(TotalUiControl.Type.EventSystem);
+            my = TotalUiControl.Instance.Create(TotalUiControl.Type.EventSystem);
             my.transform.SetAsFirstSibling(); // 맨 위로 가서 Ui와 겹치지 않게 하기 위함
             script = my.GetComponent<EventSystemControl>();
             script.Init(transform, str, str2);
@@ -108,4 +121,3 @@ public class AreaControl : MonoBehaviour
         script.OnOff(b);
     }
 }
-*/
