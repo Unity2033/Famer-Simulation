@@ -5,23 +5,19 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] Dropdown dropdown;
-    [SerializeField] Canvas lobbyCanvas;
+    [SerializeField] string lobbyName;
 
     private void Awake()
     {
-        if (PhotonNetwork.IsConnected)
-        {
-            lobbyCanvas.gameObject.SetActive(false);
-        }
+        lobbyName = "Service";
+
+        Connect();
     }
 
     public void Connect()
     {
         // 서버에 접속하는 함수
         PhotonNetwork.ConnectUsingSettings();
-
-        lobbyCanvas.gameObject.SetActive(false);
     }
 
     public override void OnConnectedToMaster()
@@ -31,7 +27,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         (
            new TypedLobby
            (
-               dropdown.options[dropdown.value].text,
+               lobbyName,
                LobbyType.Default
            )
         );
